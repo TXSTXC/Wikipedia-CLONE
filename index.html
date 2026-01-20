@@ -20,9 +20,9 @@
          <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
 
-    <body class="bg-[#101318] min-w-[500px]">
+    <body class="bg-[#101318] min-w-[500px] w-[100%] flex flex-col items-center">
 
-        <div id="main-container" class="w-[100dvw]">
+        <div id="main-container" class="w-[90dvw]">
             <!-- Wikipedia Logo & Text -->
             <div class="font-[linux-libertine] text-[#e8e9eb] flex flex-col justify-center items-center mt-[40px] mb-5">
                 <p class="text-[2.2rem]">W<span class="text-[1.6rem]">IKIPEDI</span>A</p>
@@ -103,8 +103,8 @@
             <div class="flex justify-center items-center self-center mt-10">
                 <!-- Search Bar -->
                  <div class="flex">
-                    <input type="text" id="home-search" name="home-search" class="p-[20px] w-[335px] h-[44px] border-t-1 border-l-1 border-b-1 border-white text-white">
-                    <select type="dropdown" id="home-search" name="home-search" class="p-[20px] w-[65px] h-[44px] border-t-1 border-b-1 border-b-1 border-white bg-[#101318] text-[lightgray] font-[linux-libertine]">
+                    <input type="text" id="home-search" name="home-search" class="p-[20px] w-[335px] h-[44px] border-t-1 border-l-1 border-b-1 border-[gray] text-white">
+                    <select type="dropdown" id="home-search" name="home-search" class="p-[10px] w-[65px] h-[44px] border-t-1 border-b-1 border-[gray] bg-[#101318] text-[lightgray] text-[0.7rem] font-[linux-libertine]">
                         <option value="en" selected="en">EN</option>
                         <option value="es">ES</option>
                         <option value="ja">JA</option>
@@ -119,23 +119,194 @@
                  </div>
                 
                 <!-- Magnifying Glass -->
-                <div class=" flex justify-center p-2 bg-[#3066d2] hover:bg-[#233566] w-[56px] h-[44px] border-t-1 border-r-1 border-b-1 border-white">
+                <div class=" flex justify-center p-2 bg-[#3066d2] hover:bg-[#233566] w-[56px] h-[44px] border-t-1 border-r-1 border-b-1 border-[gray]">
                     <img src="./media/search-icon.png">
                 </div>
             </div>
 
             <!-- Language Links -->
             <div class="flex justify-center items-center w-[100%] mt-10">
-                <p class="border-b-1 border-white w-[70px] mb-[5px] mr-5"></p>
-                <div class="w-[300px] h-10 text-[white] border-white border-1 flex justify-center items-center gap-3 bg-gray-700/30 hover:bg-[black]">
-                    <img src="./media/language-icon.png" class="h-[30px]">
-                    <span class="text-[#8ea3d8] text-[0.8rem] font-bold">Read Wikipedia in your language</span>
+                <p class="border-b-1 border-[gray] w-[70px] mb-[5px] mr-5"></p>
+                <div class="w-[300px] h-8 text-[white] border-[gray] border-1 flex justify-center items-center gap-3 bg-gray-700/30 hover:bg-[#101318]">
+                    <img src="./media/language-icon.png" class="h-[30px] p-1">
+                    <span class="text-[#8ea3d8] text-[0.8rem] font-bold p-1">Read Wikipedia in your language</span>
                     <img src="./media/down-arrow.png" class="h-[15px]">
                 </div>
-                <p class="border-b-1 border-white w-[70px] mb-[5px] ml-5"></p>
+                <p class="border-b-1 border-[gray] w-[70px] mb-[5px] ml-5"></p>
             </div>
-
         </div>
+
+        <div class="flex justify-center w-[97dvw] border-b-1 border-[gray] mt-[50px]"></div>
+        <!-- **FOOTER** -->
+        <footer class="flex sm:flex-row flex-wrap justify-center items-center gap-[1px] w-[100%] mt-10">
+
+                        <!-- FOOTER LEFT -->
+                <div class="flex flex-col text-[0.9rem] w-[350px]">
+
+                        <!-- LEFT COLUMN -->
+                    <div class="flex sm:flex-row flex-col items-center sm:self-end text-[white] p-2">
+                        <img src="./media/wikipedia-small-logo.png" class="w-[50px] sm:self-start mb-3 mr-3">
+                        <div class="flex flex-col">
+                            <p class="sm:text-left text-center text-[#a2a9b1]">Wikipedia is hosted by the Wikimedia</br> Foundation, a non-profit organization that also</br> hosts a range of other projects.</p>
+                            <a href="https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=GB&uselang=en-gb&wmf_medium=portal&wmf_source=portalFooter&wmf_campaign=portalFooter" class="sm:text-left text-center text-[#88a3e8] hover:underline">You can support our work with a donation.</a>
+                        </div>
+                    </div>
+
+                        <!-- MIDDLE SECTION -->
+                    <div class="flex flex-col bg-[#202123] text-[white] p-2 mt-5 w-[350px]">
+                        <div class="flex gap-2">
+                            <img src="./media/wiki-icon.png" class="w-[40px]">
+                            <a href="https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_apps" class="sm:text-left text-center text-[#88a3e8] hover:underline font-bold">Download Wikipedia for Android or iOS</a>
+                        </div>
+
+                        <p class="text-[#a2a9b1] text-left ml-12">Save your favorite articles to read offline, sync</br> your reading lists across devices and</br> customize your reading experience with the</br> official Wikipedia app.</p>
+                        
+                        <div class="flex justify-center gap-2">
+                            <a href="https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob"><img src="./media/android-app-logo.png" class="w-[100px]"></a>
+                            <a href="https://apps.apple.com/us/app/wikipedia/id324715238"><img src="./media/apple-app-logo.png" class="w-[100px]"></a>
+                        </div>
+                    </div>
+
+                        <!--LOWER SECTION  -->
+                        <div class=" flex items-center bg-[#202123] text-[#a2a9b1] text-[0.8rem] mt-5 p-3 w-[350px] h-[50px]">
+                            <p class="self-start ml-2">Birthday Mode</p>
+                            <label class="relative flex justify-between group p-2 text-xl">
+                                <input type="checkbox" class="absolute left-1/2 -translate-x-1/2 w-full h-full peer appearance-none rounded-md" />
+                                <span class="w-16 h-10 flex flex-shrink-0 ml-4 p-1 bg-[#101318] rounded-full duration-300 ease-in-out peer-checked:bg-[#3466c7] after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-md after:duration-300 peer-checked:after:translate-x-6 group-hover:after:translate-x-1"></span>
+                            </label>
+                        </div>
+                </div>
+
+                <!-- FOOTER RIGHT -->
+                <div class="flex gap-10 w-[70%] shrink ml-20">
+
+                    
+                    <!-- LEFT COLUMN -->
+                    <div class="flex flex-col gap-5 w-[33%]">
+                        
+                        <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                         <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                         <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                         <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                         <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                  
+                    
+
+                    </div>
+                        <!-- MIDDLE COLUMN -->
+                    <div class="flex flex-col gap-5 w-[33%]">
+                        
+                        <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                        <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                        <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                        <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>
+                        
+
+                    </div>
+                    <!-- RIGHT COLUMN -->
+                    <div class="flex flex-col gap-5 w-[33%]">
+                        <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                         <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                         <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                         <a href="https://commons.wikimedia.org/wiki/Main_Page">
+                            <div class="flex flex  p-2 w-[100%] hover:bg-gray-600/50">
+                                <img src="./media/commons-icon.png" class="w-[30px] h-[40px]">
+                                <div class="flex flex-col ml-2">
+                                    <p class="text-[#88a3e8] text-[0.9rem]">Commons</p>
+                                    <p class="text-[#a2a9b1] text-[0.8rem]">Free media collection</p>
+                                </div>
+                            </div> 
+                        </a>                   
+                    </div>
+                </div>
+                
+        </footer>
+
 
 
 
